@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Professional Task Manager</title>
+	<link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h1>Professional Task Manager</h1>
+			<p>Organize and manage your tasks efficiently</p>
+		</div>
+		
+		<div class="content">
+			<div class="form-section">
+				<h2>Add New Task</h2>
+				<form id="task-form">
+					<div class="form-group">
+						<label for="title">Task Title</label>
+						<input type="text" id="title" placeholder="Enter task title" required />
+					</div>
+					<div class="form-group">
+						<label for="description">Description</label>
+						<textarea id="description" placeholder="Enter task description"></textarea>
+					</div>
+					<div class="form-group">
+						<label for="status">Status</label>
+						<select id="status">
+							<option value="pending">Pending</option>
+							<option value="in_progress">In Progress</option>
+							<option value="done">Completed</option>
+						</select>
+					</div>
+					<button type="submit">Add Task</button>
+				</form>
+			</div>
+			
+			<div class="tasks-section">
+				<h2>Your Tasks</h2>
+				<ul id="task-list"></ul>
+			</div>
+		</div>
+	</div>
+	<script src="./script.js"></script>
+</body>
+</html>
