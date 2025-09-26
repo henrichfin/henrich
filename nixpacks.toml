@@ -1,0 +1,14 @@
+[phases.setup]
+nixPkgs = ["php", "apacheHttpd", "mysql"]
+
+[phases.install]
+cmds = ["echo 'Installing PHP dependencies'", "echo 'No npm dependencies needed'"]
+
+[phases.build]
+cmds = ["echo 'Building PHP application'", "echo 'No build process needed'"]
+
+[start]
+cmd = "php -S 0.0.0.0:$PORT -t ."
+
+[variables]
+PHP_VERSION = "8.2"

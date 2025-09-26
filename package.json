@@ -1,0 +1,30 @@
+{
+  "name": "henrich-task-manager",
+  "version": "1.0.0",
+  "description": "Professional Task Manager - PHP/Apache/MySQL web application",
+  "main": "index.html",
+  "scripts": {
+    "start": "php -S 0.0.0.0:8080 -t .",
+    "dev": "php -S localhost:8080 -t .",
+    "build": "echo 'No build process needed for PHP app'",
+    "test": "echo 'No tests configured'"
+  },
+  "keywords": [
+    "task-manager",
+    "php",
+    "apache",
+    "mysql",
+    "web-application"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "php": ">=8.0"
+  },
+  "nixpacks": {
+    "providers": ["php", "node"],
+    "buildCommand": "echo 'Building PHP application'",
+    "startCommand": "php -S 0.0.0.0:$PORT -t ."
+  }
+}
