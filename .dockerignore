@@ -1,0 +1,16 @@
+# Ignore unnecessary files
+node_modules/
+.git/
+.gitignore
+README.md
+.vscode/
+*.log
+
+# Keep only essential files
+!backend/
+!database/
+!config/
+!index.html
+!script.js
+!style.css
+!.htaccess
